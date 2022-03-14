@@ -4,8 +4,19 @@ body {
     background-color: #E5E5E5;
 }
 
+/* Start Body */
+
+.body {
+    display: flex;
+}
+
+/* End Body */
+
+/* Start Header */
+
 .header {
     display: flex;
+    margin: 0px;
 }
 
 .header .logo {
@@ -18,6 +29,8 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    border-bottom: 1px solid #FFF;
+    position: fixed;
 }
 
 .header .logo img {
@@ -26,11 +39,16 @@ body {
 }
 
 .header .menu {
+    display: flex;
     background-color: #FFF;
     flex-grow: 1;
     flex-direction: row;
     height: 50px;
     flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    left: 150px;
+    right: 0;
 }
 
 .header .menu .toggle-nav {
@@ -66,13 +84,206 @@ body {
 }
 
 .header .menu .search {
-    background-color: red;
+    flex: 1;
+    color: #C4C4C4;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
     height: 50px;
     width: 50px;
+    border-right: 1px solid #c4c4c4;
+}
+
+.header .menu .search i {
+    height: 20px;
+    width: 20px;
+    margin-left: 12px;
+}
+
+.header .menu .search input {
+    border: none;
+    color: #C4C4C4;
+}
+
+.header .menu .search input:focus {
+    border: none;
 }
 
 .header .menu .message {
-    background-color: aqua;
     height: 50px;
     width: 50px;
+    border-right: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.header .menu .message i {
+    color: #C4C4C4;
+}
+
+.header .menu .notif {
+    height: 50px;
+    width: 50px;
+    border-right: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .menu .notif i {
+    color: #C4C4C4;
+}
+
+.header .menu .list-menu {
+    height: 50px;
+    width: 50px;
+    border-right: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .menu .list-menu i {
+    margin: 1px;
+    color: #C4C4C4;
+}
+
+.header .menu .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    width: 160px;
+}
+
+.header .menu .profile:hover {
+    
+}
+
+.header .menu .profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.header .menu .profile .name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    color: #000;
+}
+
+.header .menu .profile .drop-down {
+    display: none;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    width: 180px;
+    background-color: #FFF;
+}
+
+.header .menu .profile .drop-down ul {
+    margin: 0px;
+    padding: 10px 20px;
+    position: relative;
+    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
+}
+
+.header .menu .profile .drop-down ul::before {
+    content: "";
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    width: 0px;
+    height: 0px;
+    border-bottom: 5px solid #FFF;
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+}
+
+.header .menu .profile:hover .drop-down {
+    display: block;
+}
+
+.header .menu .profile .drop-down ul li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+.header .menu .profile .drop-down ul li:hover {
+    color: #6D52ED;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+/* End Header */
+
+/* Start Nav Menu */
+
+.nav-menu {
+    background-color: #373B54;
+    width: 150px;
+    height: calc(100vh - 51px);
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 51px;
+}
+
+.nav-menu ul {
+    margin: 0px;
+    justify-content: left;
+    padding: 0px;
+    width: 135px;
+    margin-top: 16px;
+}
+
+.nav-menu ul li {
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #FFF;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 27px;
+    box-sizing: border-box;
+}
+
+.nav-menu ul li .link {
+    margin-left: 10px;
+}
+
+.nav-menu ul .selected {
+    background-color: #6D52ED;
+    border-radius: 5px;
+}
+
+/* End Nav Menu */
+
+/* Start Main */
+
+.main {
+    flex: 1;
+    padding: 15px;
+    margin-left: 150px;
+    margin-top: 51px;
+}
+
+.main .title {
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+/* End Main */
