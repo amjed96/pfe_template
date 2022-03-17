@@ -21,7 +21,7 @@ body {
 
 .header .logo {
     height: 50px;
-    width: 150px;
+    width: 180px;
     background-color: #373B54;
     color: #FFF;
     font-family: 'Bebas Neue';
@@ -47,7 +47,7 @@ body {
     flex-wrap: nowrap;
     position: fixed;
     top: 0;
-    left: 150px;
+    left: 180px;
     right: 0;
 }
 
@@ -228,7 +228,7 @@ body {
 
 .nav-menu {
     background-color: #373B54;
-    width: 150px;
+    width: 180px;
     height: calc(100vh - 51px);
     margin: 0px;
     display: flex;
@@ -241,7 +241,7 @@ body {
     margin: 0px;
     justify-content: left;
     padding: 0px;
-    width: 135px;
+    width: 165px;
     margin-top: 16px;
 }
 
@@ -275,7 +275,7 @@ body {
 .main {
     flex: 1;
     padding: 15px;
-    margin-left: 150px;
+    margin-left: 180px;
     margin-top: 51px;
 }
 
